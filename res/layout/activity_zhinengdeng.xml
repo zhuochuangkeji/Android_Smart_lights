@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	        <LinearLayout
+	        android:id="@+id/ly"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginTop="5dp" >
+	
+	        <Button
+	            android:id="@+id/but0"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/shape"
+	            android:text="继电器0"
+	            android:textColor="#FFFFFF"
+	            android:textSize="24dp" />
+	
+	        <Button
+	            android:id="@+id/but1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/shape"
+	            android:text="继电器1"
+	            android:textColor="#FFFFFF"
+	            android:textSize="24dp" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/lls"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ly" >
+	
+	        <Button
+	            android:id="@+id/but2"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/shape"
+	            android:text="继电器2"
+	            android:textColor="#FFFFFF"
+	            android:textSize="24dp" />
+	
+	        <Button
+	            android:id="@+id/but3"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/shape"
+	            android:text="继电器3"
+	            android:textColor="#FFFFFF"
+	            android:textSize="24dp" />
+	    </LinearLayout>
+	
+	    <TextView
+	        android:id="@+id/textView0"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/ly"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="20dp"
+	        android:text="关闭" 
+	        android:textColor="#FFFFFF"
+	        android:textSize="20dp"/>
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/ly"
+	        android:layout_alignRight="@+id/ly"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginRight="20dp"
+	        android:text="关闭" 
+	        android:textColor="#FFFFFF"
+	        android:textSize="20dp"/>
+	    
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/lls"
+	        android:layout_alignLeft="@+id/lls"
+	        android:layout_marginBottom="15dp"
+	        android:layout_marginLeft="20dp"
+	        android:text="关闭" 
+	        android:textColor="#FFFFFF"
+	        android:textSize="20dp"/>
+	    
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/lls"
+	        android:layout_alignRight="@+id/lls"
+	        android:layout_marginBottom="15dp"
+	        android:layout_marginRight="20dp"
+	        android:text="关闭" 
+	        android:textColor="#FFFFFF"
+	        android:textSize="20dp"/>
+	    
+	    <RelativeLayout 
+	    	android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_centerInParent="true"
+	        android:orientation="horizontal"
+	        android:background="@drawable/yuan">
+
+	        <ImageView
+	            android:id="@+id/b"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/gizwitslogo" />
+
+	    </RelativeLayout>
+	    
+	    
+	    
+	    
+	    
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/eTly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+        <EditText
+	        android:id="@+id/eT"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_weight="4"
+	        android:background="#C2C2C2"
+	        android:ems="10"
+	        android:maxLines="1"
+	        android:imeOptions="actionDone" />
+        <Button
+            android:id="@+id/eTbut"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btnok"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            />
+        </LinearLayout>
+        
+</RelativeLayout>
